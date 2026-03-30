@@ -1,11 +1,19 @@
-import TodoItem from "./TodoItem";
+import TodoItem from "./TodoItem.jsx";
 
-function  TodoList() {
-    return (
-        <div>
-            /* This is the TodoList component. You can add your code here to create a list of todo items. For example, you can use an array to store the todo items and map through the array to display each item using the TodoItem component. Make sure to style the component using CSS to make it visually appealing. */
-        </div>
-    );
+function TodoList({ todos, deleteTodo, toggleComplete, editTodo }) {
+  return (
+    <div>
+      {todos.map((todo) => (
+        <TodoItem
+          key={todo.id}
+          todo={todo}
+          deleteTodo={deleteTodo}
+          toggleComplete={toggleComplete}
+          editTodo={editTodo}
+        />
+      ))}
+    </div>
+  );
 }
 
 export default TodoList;
