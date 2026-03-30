@@ -1,3 +1,18 @@
 /* Css code is here where you can add your custom styles for the Todo App. You can modify the appearance of the app by changing the styles in this file. For example, you can change the background color, font size, or layout of the app to make it more visually appealing. Make sure to save your changes and refresh the app to see the updates. */
 
 /* Example styles for the Todo App */
+.app {
+  text-align: center;
+  margin-top: 50px;
+}
+
+input {
+  padding: 8px;
+  margin: 5px;
+}
+
+button {
+  padding: 8px 10px;
+  margin: 5px;
+  cursor: pointer;
+}
